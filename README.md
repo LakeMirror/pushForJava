@@ -6,6 +6,7 @@
 记录 push 的日志
 
 DROP TABLE IF EXISTS `socket_send_record`;
+
 CREATE TABLE `socket_send_record`  (
   `uid` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `account` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
@@ -18,6 +19,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 记录未发送成功的消息
 
 DROP TABLE IF EXISTS `unsend_record`;
+
 CREATE TABLE `unsend_record`  (
   `number` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `uid` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
