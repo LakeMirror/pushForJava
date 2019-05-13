@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e00aad23-da09-4f05-a72c-18dc22395643" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/PushModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/constant/SocketConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/SendRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/UnSendRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/intercepter/WebMvcInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/service/SocketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/ConfigConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/RecordTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hugy/learn/utils/MapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-configuration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sendRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/unSendRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/403.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/403.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/WEB-INF/decorators.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/WEB-INF/decorators.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/includes/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/scripts/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/scripts/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/scripts/jquery.tablesorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/scripts/jquery.tablesorter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/styles/tablesorter/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/console/src/main/webapp/styles/tablesorter/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/bin/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/bin/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/container/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/container/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/hibernate/UserDaoHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/hibernate/UserDaoHibernate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/hibernate/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/hibernate/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/dao/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/model/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/model/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/impl/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/impl/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/service/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/util/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/util/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/UnauthenticatedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/UnauthenticatedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/auth/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/auth/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/codec/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/codec/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/handler/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/handler/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/net/XmppIoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/net/XmppIoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/net/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/net/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/presence/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/presence/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/push/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/push/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/router/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/router/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/session/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/session/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/ssl/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/androidpn/server/xmpp/ssl/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/openfire/net/MXParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/openfire/net/MXParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/openfire/nio/XMLLightweightParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/openfire/nio/XMLLightweightParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/util/PropertyEventDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/util/PropertyEventDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/util/PropertyEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/util/PropertyEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/util/XMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/java/org/jivesoftware/util/XMLWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/resources/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/resources/ehcache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/test/resources/sample-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/server/src/test/resources/sample-data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/starter/src/main/java/org/androidpn/server/starter/package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0-src/androidpn-server-0.5.0/starter/src/main/java/org/androidpn/server/starter/package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/bin/db/androidpn.log" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/bin/db/androidpn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/bin/db/androidpn.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/bin/db/androidpn.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/bin/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/bin/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/conf/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/conf/ehcache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/conf/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/conf/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/403.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/403.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/WEB-INF/decorators.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/WEB-INF/decorators.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/includes/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/scripts/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/scripts/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/scripts/jquery.tablesorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/scripts/jquery.tablesorter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/styles/tablesorter/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/console/styles/tablesorter/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../androidpn-server-0.5.0/logs/adnroidpn.log" beforeDir="false" afterPath="$PROJECT_DIR$/../androidpn-server-0.5.0/logs/adnroidpn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../androidpnclient/androidpnclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../androidpnclient/androidpnclient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../androidpnclient/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../androidpnclient/build.gradle" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/unSendRecordMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="60" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/UnSendRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sendRecordMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/PushModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/SocketBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+              <folding>
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/RecordTimer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/ConfigConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/service/SocketService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/SendRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;☆&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>SocketConstant.SEPARATOR</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/intercepter/WebMvcIntercepter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/intercepter/WebMvcInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/WebMvcConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseinter/UnSendRecordInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseRepority/UnSendRecordInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseRepository/UnSendRecordInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseRepository/UnSendRecordRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseRepository/UnSendRecordDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/UnSendRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/utils/MapUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/UnSendRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/unSendRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/SocketBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/RecordTimer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/ConfigConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/constant/SocketConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/PushModel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-configuration.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/sendRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/service/SocketService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/SendRecord.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="learn" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="learn" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="90" />
+    <option name="y" value="55" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="databasebean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="timerwork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pushserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pushserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557717220379" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hugy.learn.bean" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\androidProject\xmpp\AndroidIMByXMPP\testIMByXMPP\androidpn-server-0.5.0\pushserver\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hugy.learn.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\androidProject\xmpp\AndroidIMByXMPP\testIMByXMPP\androidpn-server-0.5.0\pushserver\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.App.test">
+    <configuration name="App.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pushserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hugy.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hugy.learn" />
+      <option name="MAIN_CLASS_NAME" value="com.hugy.learn.App" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocketService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pushserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hugy.learn.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hugy.learn.service" />
+      <option name="MAIN_CLASS_NAME" value="com.hugy.learn.service.SocketService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocketService.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pushserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hugy.learn.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hugy.learn.service" />
+      <option name="MAIN_CLASS_NAME" value="com.hugy.learn.service.SocketService" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocketService.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pushserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hugy.learn.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hugy.learn.service" />
+      <option name="MAIN_CLASS_NAME" value="com.hugy.learn.service.SocketService" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pushserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hugy.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hugy.learn.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.App.test" />
+        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="JUnit.SocketService.test" />
+        <item itemvalue="JUnit.SocketService.testInsert" />
+        <item itemvalue="JUnit.SocketService" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e00aad23-da09-4f05-a72c-18dc22395643" name="Default Changelist" comment="" />
+      <created>1557035726246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557035726246</updated>
+      <workItem from="1557035731487" duration="10675000" />
+      <workItem from="1557102942445" duration="21718000" />
+      <workItem from="1557136253543" duration="582000" />
+      <workItem from="1557189334038" duration="5567000" />
+      <workItem from="1557278192162" duration="14369000" />
+      <workItem from="1557392920688" duration="1838000" />
+      <workItem from="1557714034616" duration="1242000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SocketService_test - 2019.05.06 at 16h 30m 12s.xml">
+      <configuration name="SocketService.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SocketService_test - 2019.05.06 at 16h 31m 46s.xml">
+      <configuration name="SocketService.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.08 at 15h 18m 30s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.08 at 15h 20m 10s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.08 at 15h 21m 26s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.09 at 17h 25m 22s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.09 at 17h 32m 38s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.09 at 17h 33m 41s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.09 at 17h 37m 55s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="App_test - 2019.05.09 at 17h 39m 40s.xml">
+      <configuration name="App.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="55991000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.806701" visible="true" weight="0.26072386" />
+      <window_info id="Structure" order="1" sideWeight="0.19329897" side_tool="true" weight="0.29021448" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45042494" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44334278" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.203966" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.21983914" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.806701" visible="true" weight="0.29021448" />
+      <window_info id="Structure" order="1" sideWeight="0.19329897" side_tool="true" visible="true" weight="0.29021448" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45042494" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44334278" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.203966" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.21983914" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>list</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>item.getUid().equals(arr[0])</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>item.getUid()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>record.getUid()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.getUid()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.getUid().contains(record.getUid())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;on&quot;.equals(entry.getState())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;on&quot;.equals(entry.getState()) &amp;&amp; entry.getUid().contains(record.getUid())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.1.RELEASE/spring-boot-autoconfigure-1.4.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="905" selection-start-line="905" selection-end-line="905" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.3.RELEASE/spring-web-4.3.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1361">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pushserver.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/IOException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseRepository/UnSendRecordDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/databaseRepository/UnSendRecordRepository.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="984" column="47" selection-start-line="984" selection-start-column="42" selection-end-line="984" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/intercepter/WebMvcInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/utils/MapUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/WebMvcConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/URLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="977" column="14" selection-start-line="977" selection-start-column="14" selection-end-line="977" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/constant/SocketConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/unSendRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/UnSendRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sendRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/PushModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/bean/SocketBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/databasebean/SendRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/RecordTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/service/SocketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hugy/learn/timerwork/ConfigConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>pushserver</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

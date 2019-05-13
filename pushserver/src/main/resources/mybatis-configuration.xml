@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J"></setting>
+    </settings>
+    <typeAliases>
+        <package name="com.hugy.learn.databasebean"/>
+    </typeAliases>
+    <environments default="development">
+        <!--id属性必须和上面的default一样  -->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/cnwin?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;userSSL=false"/>
+                <property name="username" value="root"/>
+                <property name="password" value="hugy"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="unSendRecordMapper.xml"/>
+        <mapper resource="sendRecordMapper.xml"/>
+    </mappers>
+
+</configuration>
