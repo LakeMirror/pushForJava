@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+	<title>wangEditor mobile test</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/wangEditor-mobile.css">
+	
+	<style type="text/css">
+		.container {
+			width:100%; 
+			height:300px; 
+			border:1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<p>wangEditor-mobile test</p>
+
+	<div class="container">
+		<textarea id="textarea1" style="width:100%;height:100%;">
+			<p>请输入内容...</p>
+		</textarea>
+	</div>
+	<a href="scheme1://host1:8080/path1">123123131</a>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript">
+	
+//		function openApp() {
+//			location.href = 'scheme1://host1:8080/path1?query1=1&query2=true';
+//		}
+//		openApp();
+
+		function get(obj = {url: '', header: {}, showLoading: true, data: {}, successCallback, errorCallback}) {
+			var ajaxObj = new XMLHttpRequest();
+			ajaxObj.open('GET', obj.url);
+			//ajaxObj.headers = obj.header;
+			//ajaxObj.data = obj.data;
+			ajaxObj.setRequestHeader("origin", "10.10.0.168");
+			ajaxObj.send();
+			ajaxObj.onreadystatechange = function () {
+				if (ajaxObj.readyState == 4 && ajaxObj.status == 200) {
+					// 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
+					// 5.在注册的事件中 获取 返回的 内容 并修改页面的显示
+					console.log('数据返回成功');
+
+					// 数据是保存在 异步对象的 属性中
+					console.log(ajaxObj.responseText);
+
+					// 修改页面的显示
+					document.querySelector('h1').innerHTML = ajaxObj.responseText;
+				} else {
+					obj.errorCallback(ajaxObj.response);
+				}
+			}
+		}
+		function encodeUTF8(s) {
+		  var i, r = [], c, x;
+		  for (i = 0; i < s.length; i++)
+			if ((c = s.charCodeAt(i)) < 0x80) r.push(c);
+			else if (c < 0x800) r.push(0xC0 + (c >> 6 & 0x1F), 0x80 + (c & 0x3F));
+			else {
+			  if ((x = c ^ 0xD800) >> 10 == 0) //对四字节UTF-16转换为Unicode
+				c = (x << 10) + (s.charCodeAt(++i) ^ 0xDC00) + 0x10000,
+				  r.push(0xF0 + (c >> 18 & 0x7), 0x80 + (c >> 12 & 0x3F));
+			  else r.push(0xE0 + (c >> 12 & 0xF));
+			  r.push(0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
+			};
+		  return r;
+		}
+		
+		function sha1(s) {
+		  var data = new Uint8Array(encodeUTF8(s))
+		  var i, j, t;
+		  var l = ((data.length + 8) >>> 6 << 4) + 16, s = new Uint8Array(l << 2);
+		  s.set(new Uint8Array(data.buffer)), s = new Uint32Array(s.buffer);
+		  for (t = new DataView(s.buffer), i = 0; i < l; i++)s[i] = t.getUint32(i << 2);
+		  s[data.length >> 2] |= 0x80 << (24 - (data.length & 3) * 8);
+		  s[l - 1] = data.length << 3;
+		  var w = [], f = [
+			function () { return m[1] & m[2] | ~m[1] & m[3]; },
+			function () { return m[1] ^ m[2] ^ m[3]; },
+			function () { return m[1] & m[2] | m[1] & m[3] | m[2] & m[3]; },
+			function () { return m[1] ^ m[2] ^ m[3]; }
+		  ], rol = function (n, c) { return n << c | n >>> (32 - c); },
+			k = [1518500249, 1859775393, -1894007588, -899497514],
+			m = [1732584193, -271733879, null, null, -1009589776];
+		  m[2] = ~m[0], m[3] = ~m[1];
+		  for (i = 0; i < s.length; i += 16) {
+			var o = m.slice(0);
+			for (j = 0; j < 80; j++)
+			  w[j] = j < 16 ? s[i + j] : rol(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1),
+				t = rol(m[0], 5) + f[j / 20 | 0]() + m[4] + w[j] + k[j / 20 | 0] | 0,
+				m[1] = rol(m[1], 30), m.pop(), m.unshift(t);
+			for (j = 0; j < 5; j++)m[j] = m[j] + o[j] | 0;
+		  };
+		  t = new DataView(new Uint32Array(m).buffer);
+		  for (var i = 0; i < 5; i++)m[i] = t.getUint32(i << 2);
+
+		  var hex = Array.prototype.map.call(new Uint8Array(new Uint32Array(m).buffer), function (e) {
+			return (e < 16 ? "0" : "") + e.toString(16);
+		  }).join("");
+		  return hex;
+		}
+		
+		var nonceStr = "123456";
+		var timeStamp = new Date().getTime();
+		var signatrue = sha1("jsapi_ticket=HoagFKDcsGMVCIY2vOjf9hdnDXcScBO9dePk05Ya5JEMo5znzc741k1dYRjM994kNa0VAliSmJOzEqjBJIqgiQ&noncestr="+ nonceStr + "&timestamp=" + timeStamp + "&url=http://10.10.0.168:8084/editor.html");
+		
+		
+		wx.config({
+			beta: true,// 必须这么写，否则wx.invoke调用形式的jsapi会有问题
+			debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			appId: 'ww6749df82d7842526', // 必填，企业微信的corpID
+			timestamp: timeStamp, // 必填，生成签名的时间戳
+			nonceStr: nonceStr, // 必填，生成签名的随机串
+			signature: signatrue,// 必填，签名，见附录1
+			jsApiList: ['launch3rdApp'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+		});
+		wx.ready(function(){
+			console.log('ready');
+			wx.checkJsApi({
+				jsApiList: ['launch3rdApp'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+				success: function(res) {
+					// 以键值对的形式返回，可用的api值true，不可用为false
+					// 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+					alert('支持');
+				}
+			});
+			// config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+			wx.invoke('launch3rdApp', {
+					'appName': 'UHD-genius', //应用显示的名称
+					'appID': '', // iOS使用，要启动应用的scheme(ios开发人员提供，非企业微信corpid)
+					'messageExt': '', // iOS使用，获取方法参考微信iOS SDK中的LaunchFromWXReq,启动App时附加的额外信息
+					'packageName': 'com.dayang.uhd', // Android使用，要启动应用的包名称
+					'param': '' // Android使用，传递给第三方的参数，第三方通过intent.getStringExtra("launchParam")得到传过去的参数值（例如本例getStringExtra得到的结果是webview）
+				}, 
+				function(res) {
+					alert(JSON.stringify(res));//返回结果
+				}
+			)
+		});
+	</script>
+</body>
+</html>
